@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+*, *:before, *:after {box-sizing: border-box}
+.ud-heading {background-color: palevioletred}
+.ud-info {background-color: palegoldenrod}
+.ud-form {background-color: lightblue}
+footer {background-color: #2196f3;}
+body {	margin: 0;
+		padding:0; 
+		font-family: 'Source Sans Pro', sans-serif; 
+		font-size: 1.2rem
+
+}
+
+header img {width: 200px;}
+header {height: 80px; display: flex; justify-content: center; align-items: center;}
+.ud-heading {
+	clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+	background-image: url("../Pictures/b1.jpg");
+	height: 200px; background-size: cover;	padding: 15px;
+}
+.ud-heading > div {	background-color: rgba(0,0,0,0.2); padding: 15px; color: #fff;
+	border-radius: 10px;
+}
+.ud-heading h1 {margin:0;font-size: 2rem; font-family: 'Merriweather', serif;}
+.ud-heading p {margin:0; }
+
+
+

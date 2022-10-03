@@ -1,0 +1,241 @@
+@charset "utf-8";
+/* CSS Document */
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6rem;
+}
+
+/* =============header============== */
+header {
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header img {
+	width: 200px;
+}
+/* =========== end header============= */
+
+
+
+/* =================banner============================== */
+.ud-heading {
+	height: 250px;
+	background-image: url("../Pictures/b1.jpg");
+	background-size: cover;
+	padding: 15px;
+	clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.ud-heading h1 {
+	font-size: 3.5rem;
+	margin: 0;
+	font-family: 'Merriweather', serif;
+}
+
+.ud-heading p {
+	margin: 0;
+}
+
+.ud-heading > div {
+	background-color: rgba(0,0,0,0.2);
+	padding: 15px;
+	color: #fff;
+	border-radius: 10px;
+}
+/* ===================end banner======================= */
+
+
+
+/* mid============================================== */
+.mid {
+	display: flex;
+	justify-content: center;
+}
+
+ .ud-info, .ud-info {
+	background-color: #fff;
+	width: 300px;
+	padding: 12px;
+	border-radius: 10px;
+	
+}
+
+.ud-info p {
+	font-size: 14px;
+}
+
+.box-content {
+			display: flex;
+			margin-top: 50px;
+			justify-content: center;
+			
+		}
+		
+		.box-content .box {
+			height: 200px;
+			margin: 0 ;
+			padding: 10px;
+			width: calc((100% - 650px) / 3);
+			border: solid 1px #bbb;
+			border-radius: 10px;
+			position: relative;
+			padding-top: -10px;
+			text-align: justify;
+		}
+	
+		
+		.box-content .box p {
+			margin-top: 30px;
+			padding: 10px;
+			font-size: 16px;
+		}
+		
+		.box-content .ten {
+			text-align: end;
+			margin: 5px;
+		}
+		
+		.box-content .box:nth-child(2) {
+			margin-left: 30px;
+			margin-right: 30px;
+		}
+		
+		.box-content .circle-image {
+			width: 90px;
+			height: 90px;
+			background-color: palegoldenrod;
+			border-radius: 50%;
+			position: absolute;
+			top: -45px;
+			left: 50%;
+			transform: translate(-50%,0);
+			background-size: cover;
+			background-position: center;
+			
+		}
+		
+		.box-content .box:nth-child(1) .circle-image {
+			background-image: url("../Pictures/designer.jpg")
+		}
+		.box-content .box:nth-child(2) .circle-image {
+			background-image: url("../Pictures/messi.jpg")
+		}
+		.box-content .box:nth-child(3) .circle-image {
+			background-image: url("../Pictures/adele.jpg")
+		}
+
+
+
+
+
+/* Footer====================================================== */
+footer {
+	background-color: #2196f3;
+	height: 150px;
+	color: #fff;
+	padding: 10px;
+	clip-path: polygon(0 0, 100% 40%, 100% 100%, 0% 100%);
+	font-size: 12px;
+	
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+footer p {
+	margin-top: 0;
+}
+
+
+
+footer .mxh-link {
+	list-style: none;
+	display: flex;
+	padding: 0;
+}
+
+footer li {
+	margin-right: 10px;
+}
+
+footer .mxh-link a {
+	font-size: 1.6rem;
+}
+
+footer .mxh-link a:hover {
+	color: #333;
+}
+
+
+@media screen and (min-width: 600px) {
+	
+	.ud-heading {
+		height: 450px;
+	}
+	
+	.ud-heading > div {
+		padding: 20px;
+	}
+	
+	.ud-heading h1 {
+		font-size: 4.8rem;
+	}
+	
+	.ud-heading .underline {
+		display: none;
+	}
+	
+	.ud-heading .gia-km {
+		color: #fff;
+		font-size: 2.8rem;
+		
+	}
+	
+	.ud-heading p {
+		font-size: 1.8rem;
+		padding: 10px;
+	}
+	
+	.mid {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	.ud-info, .ud-form {
+			height: 350px;
+			background-color: #52D87C;
+			padding: 15px;
+			border-radius: 10px;
+	}
+	
+	.ud-form input[type="text"], .ud-form input[type="submit"] {
+	width: 100%;
+	height: 45px;
+	padding-left: 5px;
+}
+
+.ud-form input[type="text"] {
+	border: solid 1px #EAEAEA;
+}
+
+.ud-form input[type="submit"] {
+	border-radius: 10px;
+	background-color: #003D9A;
+	color: #fff;
+	font-size: 16px;
+	border: none;
+	}
+}
+

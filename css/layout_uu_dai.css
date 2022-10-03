@@ -1,0 +1,161 @@
+@charset "utf-8";
+/* CSS Document */
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 1.6rem;
+	font-family: 'Arial', sans-serif;
+}
+
+header {
+	display: flex;
+	height: 80px;
+	background-color: #CA4547;
+	align-items: center;
+	justify-content: center;
+}
+
+.ud-heading {
+	background-color: #DE6A39;
+	height: 250px;
+	padding: 15px;
+	clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+	
+}
+
+.ud-heading > div {
+	background-color: rgba(0,0,0,0.2);
+	padding: 15px;
+	color: #fff;
+	border-radius: 10px;
+}
+
+.mid {
+	margin-top: -100px;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.ud-info, .ud-form {
+	width: 400px;
+	height: 500px;
+	border-radius: 20px;
+	margin:  15px;
+	
+}
+
+.ud-info {
+	background-color: #5BBD39;
+}
+
+.ud-form {
+	background-color: #49C9A4;
+}
+
+.box-content {
+			display: flex;
+			margin-top: 50px;
+			justify-content: center;
+			
+		}
+		
+		.box-content .box {
+			height: 200px;
+			margin: 0 ;
+			padding: 10px;
+			width: calc((100% - 680px) / 3);
+			border: solid 1px #bbb;
+			border-radius: 10px;
+			position: relative;
+			padding-top: -10px;
+			text-align: justify;
+		}
+	
+		
+		.box-content .box p {
+			margin-top: 30px;
+			padding: 10px;
+			font-size: 16px;
+		}
+		
+		.box-content .ten {
+			text-align: end;
+			margin: 5px;
+		}
+		
+		.box-content .box:nth-child(2) {
+			margin-left: 30px;
+			margin-right: 30px;
+		}
+		
+		.box-content .circle-image {
+			width: 90px;
+			height: 90px;
+			background-color: palegoldenrod;
+			border-radius: 50%;
+			position: absolute;
+			top: -45px;
+			left: 50%;
+			transform: translate(-50%,0);
+			background-size: cover;
+			background-position: center;
+			
+		}
+		
+		.box-content .box:nth-child(1) .circle-image {
+			background-image: url("../Pictures/designer.jpg")
+		}
+		.box-content .box:nth-child(2) .circle-image {
+			background-image: url("../Pictures/messi.jpg")
+		}
+		.box-content .box:nth-child(3) .circle-image {
+			background-image: url("../Pictures/adele.jpg")
+		}
+
+
+footer {
+	background-color: #4458CB;
+	height: 150px;
+	clip-path: polygon(0 0, 100% 60%, 100% 100%, 0% 100%);
+}
+
+@media only screen and (min-width: 500px) {
+	.mid {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.ud-info, .ud-form {
+		margin: 10px;
+	}
+	
+	.box-content {
+		display: none;
+	}
+} 
+
+@media only screen and (min-width: 768px) {
+	.mid {
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+@media only screen and (min-width:992px) {
+	.ud-info, .ud-form {
+		margin: 0 25px;
+	}
+	
+	.box-content {
+		display: flex;
+	}
+	
+	
+}

@@ -1,0 +1,338 @@
+@charset "utf-8";
+/* CSS Document */
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+.wd-full {
+	max-width: 900px; 
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial', sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	
+}
+
+
+/* ================= header ======================== */
+header {
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+header img {
+	width: 200px;
+}
+/* ================ end header ==================== */
+
+
+
+/* ================== banner ======================= */
+.ud-heading {
+	height: 350px;
+	padding: 15px;
+	background-image: url("../Pictures/b1.jpg");
+	background-size: cover;
+	clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+	text-align: right;
+	line-height: 1.6;
+}
+
+.ud-heading > div {
+	background-color: rgba(0,0,0,0);
+	width: 90%;
+	
+}
+
+.ud-heading h1 {
+	font-size: 3.5rem;
+	margin: 0;
+	font-family: 'Merriweather', serif;
+}
+
+.ud-heading p {
+	margin: 0;
+}
+/* ================== end banner ====================== */
+
+
+
+/* =================== mid ============================ */
+
+.mid {
+	margin-top: -100px;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.ud-info, .ud-form {
+		background-color: #fff;
+		width: calc((100% - 40px) / 2 );
+		margin: 0 10px;
+		padding: 15px;
+		text-align: justify;
+		border-radius: 10px;
+	}
+
+.ud-form input[type=text] {
+	width: 100%;
+	padding: 10px;
+	font-size:  0.8rem;
+}
+
+.ud-form button {
+	background-color: #003d9a;
+	color: #fff;
+	font-size: 1.1rem;
+	width: 100%;
+	height: 45px;
+	border-radius: 20px;
+	border: none;
+}
+
+.ud-form input[type=text], button {
+	margin: 5px 0;
+}
+
+.box-content {
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+.box-content .box {
+	height: 200px;
+	margin: 0;
+	padding: 10px;
+	width: calc((100% - 30px) / 3);
+	border: solid 1px #bbb;
+	border-radius: 10px;
+	position: relative;
+	padding-top:  -10px;
+	text-align: justify;
+}
+
+.box-content .box p {
+	margin-top: 30px;
+	padding: 10px;
+	font-size: 16px;
+}
+
+.box-content p.ten {
+	text-align: end;
+	margin: 10px; 
+	
+}
+
+.box-content p.ten1 {
+	margin-top: 40px;
+}
+
+.box-content .box:nth-child(2) {
+			margin-left: 30px;
+			margin-right: 30px;
+		}
+		
+		.box-content .circle-image {
+			width: 90px;
+			height: 90px;
+			background-color: palegoldenrod;
+			border-radius: 50%;
+			position: absolute;
+			top: -45px;
+			left: 50%;
+			transform: translate(-50%,0);
+			background-size: cover;
+			background-position: center;
+			
+		}
+		
+		.box-content .box:nth-child(1) .circle-image {
+			background-image: url("../Pictures/designer.jpg")
+		}
+		.box-content .box:nth-child(2) .circle-image {
+			background-image: url("../Pictures/messi.jpg")
+		}
+		.box-content .box:nth-child(3) .circle-image {
+			background-image: url("../Pictures/adele.jpg")
+		}
+
+/* =================== end mid ======================== */
+
+
+@media only screen and (min-width: 375px) {
+	
+	/* =================== banner =================== */
+	.ud-heading .underline {
+		display: none;
+	}
+	
+	.ud-heading > div {
+		background-color: rgba(0,0,0,0.2);
+		padding: 25px 100px 25px 20px;
+		width: 100%;
+		color: #fff;
+		border-radius: 10px;
+		text-align: left;
+		line-height: 50px;
+	}
+	
+	.ud-heading h1 {
+		font-size: 2.5rem;
+	}
+	
+	.ud-heading p {
+		line-height: 1.6;
+		font-size: 1rem;
+		color: #cdcdcd;
+	}
+	
+	.ud-heading .gia-km {
+		color: #fff;
+		font-size: 1rem;
+	}
+	/* =================== end banner ==================== */
+	
+	
+/* =============== mid =================== */
+	.mid {
+		margin-top: -80px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.ud-info, .ud-form {
+		width: calc(100% - 40px);
+		margin: 5px 0;
+	}
+	
+	.ud-info p {
+		font-size: .9rem;
+	}
+	
+	.box-content {
+		display: none;
+	}
+/* =================== end mid ====================== */
+	
+	
+/* ================== footer ====================== */	
+	footer {
+		background-color: #2196f3;
+		height: 200px;
+		color: #fff;
+		padding: 10px;
+		font-size: 0.8rem;
+		clip-path: polygon(0 0, 100% 60%, 100% 100%, 0 100%);
+	}
+	
+	footer .block-ft {
+		margin-top:  70px;
+	}
+	
+	footer a {
+		color: #fff;
+		text-decoration: none;
+	}
+	
+	footer p {
+		line-height: 10px;
+	}
+	
+	footer .social-link {
+		list-style: none;
+		display: flex;
+		padding: 0;
+	}
+	
+	footer li {
+		margin-right: 10px;
+	}
+	
+	footer .social-link a {
+		font-size: 1.6rem;
+	}
+	
+	footer .social-link a:hover {
+		color: #333;
+	}
+	
+/* ============== end footer =================== */
+}
+
+@media only screen and (min-width: 768px) {
+	
+	.ud-heading .underline {
+		display: inline-block;
+	}
+	
+	.ud-heading > div {
+		background-color: rgba(0,0,0,0.2);
+		width: 90%;
+		padding: 20px 35px 15px 20px;
+	}
+	
+	.ud-heading h1 {
+		font-size:  2.6rem;
+	}
+	
+	.ud-heading .gia-km {
+		font-size: 1.2rem;
+	}
+	
+	.mid {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+	}
+	
+	.ud-info, .ud-form {
+		width: calc((100% - 100px) / 2 );
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	
+
+	.box-content {
+		display: none;
+	}
+}
+
+
+@media only screen and (min-width:992px) {
+	
+	.ud-heading > div {
+		background-color: rgba(0,0,0,0);
+		text-align: right;
+		padding: 20px 0px 15px 0px;
+	}
+	
+	.ud-info, .ud-form {
+		margin: 0;
+		width: calc((100% - 60px) / 2 );
+	}
+	
+	.ud-form {
+		margin-left: 60px;
+	}
+	
+	.box-content {
+		display: flex;
+	}
+	
+	.box-content .box:nth-child(2) {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+}
